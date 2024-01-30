@@ -1,0 +1,26 @@
+
+<h1 class="centered-title">Google News</h1>
+<div class="news-container">
+ 
+  <div class="news-list">
+    @for (newsItem of newsList; track newsItem.id) {
+    <div class="news-item" (click)="showDetails(newsItem.id)">
+      <h2>{{ newsItem.title }}</h2>
+    </div>
+    }
+  </div>
+
+  @if(selectedNews){
+  <div class="selected-news">
+    <h2>{{ selectedNews.title }}</h2>
+    <div class="details">
+      <p [innerHTML]="selectedNews.body"></p>
+    </div>
+    <div class="right">
+      <a href="{{ selectedNews.link }}" target="_blank" class="read-more-link">Read More</a>
+    </div>
+    
+
+  </div>
+  }
+</div>

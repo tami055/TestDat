@@ -1,0 +1,145 @@
+/* Styles for the list of news titles
+.news-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.news-item h2 {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Responsive Styles for smaller screens */
+/*@media screen and (max-width: 600px) {
+  .news-item {
+      padding: 10px;
+  }
+}
+
+.news-item:hover {
+  background-color: #f9f9f9;
+}
+
+
+.selected-news {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.selected-news h2 {
+  margin-bottom: 10px;
+}
+
+.selected-news a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.selected-news a:hover {
+  text-decoration: underline;
+}
+
+.selected-news .details {
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .selected-news {
+      padding: 10px;
+  }
+} */
+.centered-title {
+  text-align: center; /* מרכז את הטקסט במרכז הדיב */
+  text-decoration: underline;
+  font-size: 3.5em;
+}
+
+/* Container for the entire news section */
+.news-container {
+  display: flex;
+}
+
+/* Styles for the list of news titles on the left */
+.news-list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.news-item h2 {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Responsive Styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .news-item {
+      padding: 10px;
+  }
+}
+
+.news-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Styles for the detailed news section on the right */
+.selected-news {
+  flex: 0.7; /* Adjust the flex value for a smaller width */
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.selected-news h2 {
+  margin-bottom: 10px;
+}
+
+.selected-news a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.selected-news a:hover {
+  text-decoration: underline;
+}
+
+.selected-news .details {
+  margin-top: 10px;
+}
+
+.selected-news .right {
+  text-align: right;
+}
+.selected-news .right .read-more-link {
+  color:rgb(128, 255, 0); /* צבע הקישור לפני לחיצה */
+  transition: color 0.3s ease; /* אנימציה של שינוי צבע במשך 0.3 שניות */
+  font-size: 2em;
+}
+.selected-news .right .read-more-link:hover {
+  color: yellow; /* צבע הקישור בעת מעבר העכבר (hover) */
+}
+
+
+/* Responsive Styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .selected-news {
+      padding: 10px;
+  }
+}
